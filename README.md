@@ -5,32 +5,40 @@ The Sitemap Builder is a command-line tool that generates a sitemap for a given 
 # How to Use
 Clone the repository:
 
-``` bash
-Copy code
-git clone https://github.com/your-username/sitemap-builder.git
-Navigate to the project directory:
-```
 
-bash
-Copy code
+
+``` bash
+git clone https://github.com/your-username/sitemap-builder.git
+```
+Navigate to the project directory:
+
+
+
+
+``` bash
 cd sitemap-builder
+```
 Build the project:
 
-go
-Copy code
+
+``` bash
 go build
+```
 Run the Sitemap Builder with the desired domain and depth:
 
-bash
-Copy code
+
+``` bash
 ./sitemap-builder -domain="https://example.com" -depth=3
+```
 Replace https://example.com with the domain you want to generate the sitemap for, and 3 with the maximum depth you want to follow when building the sitemap.
 
 The Sitemap Builder will generate an XML sitemap and print it to the console. You can also redirect the output to a file if needed:
 
-bash
-Copy code
+
+
+``` bash
 ./sitemap-builder -domain="https://example.com" -depth=3 > sitemap.xml
+```
 Dependencies
 The Sitemap Builder uses the following third-party libraries:
 
@@ -50,8 +58,8 @@ To avoid infinite loops and cycles, the Sitemap Builder keeps track of visited p
 
 The final output is an XML sitemap in the following format:
 
-xml
-Copy code
+# xml
+``` bash
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
@@ -62,6 +70,7 @@ Copy code
   </url>
   <!-- More URLs -->
 </urlset>
+```
 # Bonus: Depth Limit
 As a bonus feature, the Sitemap Builder can accept a -depth flag to limit the maximum depth of links to follow. If a page is more than the specified depth away from the root domain, it will not be included in the sitemap.
 
