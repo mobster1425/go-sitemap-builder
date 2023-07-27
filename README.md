@@ -5,10 +5,11 @@ The Sitemap Builder is a command-line tool that generates a sitemap for a given 
 # How to Use
 Clone the repository:
 
-bash
+``` bash
 Copy code
 git clone https://github.com/your-username/sitemap-builder.git
 Navigate to the project directory:
+```
 
 bash
 Copy code
